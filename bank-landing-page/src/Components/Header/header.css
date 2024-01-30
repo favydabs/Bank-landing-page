@@ -1,0 +1,105 @@
+header {
+    width: 100%;
+    background-color: rgb(181, 176, 176);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 40%;
+  }
+  
+  /* Navbar on Mobile Small */
+  @media screen and (max-width: 576px) {
+    .navbar {
+      width: 100%;
+      position: absolute;
+      height: 60vh;
+      top: 4.5rem;
+      left: 150%;
+      border-radius: 7px;
+      background-color: rgb(230, 223, 223);
+    }
+  }
+  
+  /* Navbar on Mobile Medium */
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+      width: 40%;
+      height: 0;
+      position: static;
+    }
+  }
+  
+  /* Active Navbar */
+  .navbar.active {
+    left: 0;
+  }
+  
+  /* Navigation Items */
+  .nav-items {
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+  }
+  
+  /* Navigation Item List */
+  .nav-items li {
+    display: inline;
+  }
+  
+  /* Navigation Item Link */
+  .nav-items li a {
+    color: rgb(44, 44, 169);
+  }
+  
+  /* Navigation Button */
+  .nav-btn {
+    padding: 0.6rem 1.7rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    background-image: linear-gradient(to right, #32cd32, #00ffff);
+
+  }
+  
+  /* Hover Effect */
+  .nav-item:hover {
+    border-bottom: 1px solid greenyellow;
+  }
+  
+  /* Selected Effect */
+  .selected {
+    border-bottom: 2px solid rgb(245, 247, 243);
+  }
+  
+  /* Burger */
+  .burger {
+    display: none;
+  }
+  
+  /* Burger on Mobile Small */
+  @media screen and (max-width: 576px) {
+    .burger {
+      display: block;
+    }
+  }
+  

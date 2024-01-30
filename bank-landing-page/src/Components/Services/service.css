@@ -1,0 +1,200 @@
+.service {
+    width: 100%;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0.8rem;
+  }
+  
+  .service .container-sec {
+    width: 80%;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .service .container-sec {
+      width: 100%;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .service .container-sec {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .sec-intro {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sec-intro {
+      align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .sec-intro {
+      align-items: flex-start;
+    }
+  }
+  
+  .sec-intro h1 {
+    color: darkblue;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sec-intro h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  .sec-intro p {
+    width: 40%;
+    margin: 1rem 0;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sec-intro p {
+      width: 90%;
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 0.7rem;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sec-intro p {
+      width: 80%;
+      margin: 1rem auto;
+      font-size: 1.5rem;
+      color: gray;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .sec-intro p {
+      width: 60%;
+      font-size: 1.5rem;
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+  
+  .sec-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sec-items {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sec-items {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .sec-items {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .sec-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 229, 229);
+    padding: 0.4rem;
+    transition: all 150ms ease-in-out;
+    box-shadow: 0px 3px 12px rgb(0, 0, 0, 15%);
+  }
+  
+  .sec-item:hover {
+    transform: scale(1.03);
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sec-item {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sec-item {
+      align-items: start;
+      text-align: left;
+      border-radius: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .sec-item {
+      align-items: flex-start;
+      text-align: left;
+      border-radius: 0;
+      background-color: white;
+    }
+  }
+  
+  .sec-item img {
+    padding: 1rem 0;
+  }
+  
+  .sec-item h3 {
+    padding: 1rem 0;
+    color: darkblue;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sec-item h3 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .sec-item h3 {
+      font-size: 1.5rem;
+      color: darkblue;
+    }
+  }
+  
+  .sec-item p {
+    padding: 1rem 0;
+    color: rgb(98, 105, 105);
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sec-item p {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .sec-item p {
+      font-size: 1.3rem;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .sec-item p {
+      width: 98%;
+      font-size: 1.2rem;
+    }
+  }
+  
